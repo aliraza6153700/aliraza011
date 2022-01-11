@@ -1,0 +1,42 @@
+﻿@model AliRaza011.Models.ordermodel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ordermodel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.dis_quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.dis_quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.price)
+        </dd>
+        <dt class="col-sm-2">
+            <span>Total Value</span>
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.total
+        </dd>
+    </dl>
+</div>
+<div>
+ 
+    <a asp-action="Index">Back to List</a>
+</div>
